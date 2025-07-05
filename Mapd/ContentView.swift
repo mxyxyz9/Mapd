@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var userManager = UserManager()
+    @StateObject private var locationManager = LocationManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if userManager.user.hasCompletedOnboarding {
+                MainTabView(
+                    userManager: userManager,
+                    locationManager: locationManager
+                )
+            } else {
+                if userManager.isFirstLaunch {
+                    WelcomeView(userManager: userManager)
+                } else {
+                    OnboardingFlow(
+                        userManager: userManager,
+                        locationManager: locationManager
+                    )
+                }
+            }
         }
-        .padding()
+        .onAppear {
+            userManager.initializeUser()
+        }
     }
 }
 
