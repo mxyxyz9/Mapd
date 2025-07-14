@@ -1,0 +1,282 @@
+{
+  "designSystem": {
+    "name": "Modern iOS Travel App Design System",
+    "version": "1.0",
+    "platform": "iOS Mobile",
+    "designPhilosophy": "Clean, modern, card-based interface with soft, rounded aesthetics and intuitive navigation patterns"
+  },
+  "colorPalette": {
+    "primary": {
+      "accent": "#9ACD32", // Lime green accent color
+      "dark": "#2C3E50", // Dark navy/charcoal
+      "description": "High contrast pairing for primary actions and text"
+    },
+    "neutrals": {
+      "background": "#F5F5F0", // Warm off-white/cream
+      "cardBackground": "#FFFFFF",
+      "lightGray": "#E8E8E8",
+      "mediumGray": "#A0A0A0",
+      "darkText": "#2C2C2C",
+      "description": "Warm, sophisticated neutral palette"
+    },
+    "semantic": {
+      "success": "#9ACD32",
+      "info": "#5A9FD8",
+      "warning": "#F39C12",
+      "error": "#E74C3C"
+    }
+  },
+  "typography": {
+    "hierarchy": {
+      "display": {
+        "fontSize": "28-32px",
+        "fontWeight": "700-800",
+        "lineHeight": "1.2",
+        "usage": "Main screen titles, hero text"
+      },
+      "heading1": {
+        "fontSize": "24-26px",
+        "fontWeight": "600-700",
+        "lineHeight": "1.3",
+        "usage": "Card titles, section headers"
+      },
+      "heading2": {
+        "fontSize": "18-20px",
+        "fontWeight": "600",
+        "lineHeight": "1.4",
+        "usage": "Subheadings, important labels"
+      },
+      "body": {
+        "fontSize": "16-17px",
+        "fontWeight": "400-500",
+        "lineHeight": "1.5",
+        "usage": "Primary body text, descriptions"
+      },
+      "caption": {
+        "fontSize": "14-15px",
+        "fontWeight": "400",
+        "lineHeight": "1.4",
+        "usage": "Secondary text, metadata"
+      },
+      "small": {
+        "fontSize": "12-13px",
+        "fontWeight": "400-500",
+        "lineHeight": "1.3",
+        "usage": "Labels, fine print"
+      }
+    },
+    "fontFamily": "SF Pro Display / San Francisco (iOS system font)",
+    "fontWeights": [300, 400, 500, 600, 700, 800]
+  },
+  "spacing": {
+    "scale": "8px base unit",
+    "values": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px"
+    },
+    "patterns": {
+      "screenPadding": "20-24px",
+      "cardPadding": "16-20px",
+      "componentSpacing": "12-16px",
+      "sectionSpacing": "24-32px"
+    }
+  },
+  "borderRadius": {
+    "small": "8px",
+    "medium": "12px",
+    "large": "16px",
+    "xlarge": "20px",
+    "pill": "50px",
+    "usage": {
+      "cards": "16-20px",
+      "buttons": "12-16px",
+      "inputs": "12px",
+      "chips": "20px (pill-shaped)"
+    }
+  },
+  "shadows": {
+    "light": {
+      "offsetX": "0px",
+      "offsetY": "2px",
+      "blurRadius": "8px",
+      "color": "rgba(0, 0, 0, 0.08)",
+      "usage": "Subtle card elevation"
+    },
+    "medium": {
+      "offsetX": "0px",
+      "offsetY": "4px",
+      "blurRadius": "12px",
+      "color": "rgba(0, 0, 0, 0.12)",
+      "usage": "Interactive cards, buttons"
+    },
+    "heavy": {
+      "offsetX": "0px",
+      "offsetY": "8px",
+      "blurRadius": "24px",
+      "color": "rgba(0, 0, 0, 0.16)",
+      "usage": "Modals, prominent elements"
+    }
+  },
+  "components": {
+    "cards": {
+      "structure": {
+        "backgroundColor": "white",
+        "borderRadius": "16-20px",
+        "padding": "16-20px",
+        "shadow": "light to medium",
+        "margin": "12-16px between cards"
+      },
+      "variants": {
+        "standard": "Full-width with consistent padding",
+        "compact": "Reduced padding for dense information",
+        "hero": "Large cards with image backgrounds",
+        "list": "Horizontal scrolling card collections"
+      }
+    },
+    "buttons": {
+      "primary": {
+        "backgroundColor": "#9ACD32",
+        "textColor": "white",
+        "borderRadius": "12-16px",
+        "padding": "12-16px vertical, 20-24px horizontal",
+        "fontWeight": "600",
+        "minHeight": "44px"
+      },
+      "secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "#2C3E50",
+        "border": "1px solid #E8E8E8",
+        "borderRadius": "12-16px",
+        "padding": "12-16px vertical, 20-24px horizontal"
+      },
+      "ghost": {
+        "backgroundColor": "transparent",
+        "textColor": "#2C3E50",
+        "padding": "8-12px",
+        "fontWeight": "500"
+      }
+    },
+    "chips": {
+      "structure": {
+        "backgroundColor": "#F5F5F0",
+        "borderRadius": "20px (pill)",
+        "padding": "8-12px vertical, 16-20px horizontal",
+        "fontSize": "14-15px",
+        "fontWeight": "500"
+      },
+      "states": {
+        "default": "Light background, dark text",
+        "selected": "Primary color background, white text",
+        "disabled": "Reduced opacity"
+      }
+    },
+    "navigation": {
+      "topBar": {
+        "height": "44px + safe area",
+        "backgroundColor": "transparent or white",
+        "backButton": "Standard iOS back chevron",
+        "title": "Centered, medium weight",
+        "actions": "Right-aligned icons"
+      },
+      "bottomBar": {
+        "height": "49px + safe area",
+        "backgroundColor": "white",
+        "shadow": "light upward shadow",
+        "icons": "System icons, 28px size"
+      }
+    },
+    "inputs": {
+      "structure": {
+        "backgroundColor": "white",
+        "borderRadius": "12px",
+        "padding": "12-16px",
+        "border": "1px solid #E8E8E8",
+        "fontSize": "16px",
+        "minHeight": "44px"
+      },
+      "states": {
+        "default": "Light border, normal text",
+        "focused": "Primary color border, elevated shadow",
+        "error": "Error color border and text",
+        "disabled": "Reduced opacity, no interaction"
+      }
+    }
+  },
+  "layoutPatterns": {
+    "screenStructure": {
+      "safeArea": "Respects iOS safe areas",
+      "padding": "20-24px horizontal margins",
+      "scrollable": "Vertical scrolling with bounce effect",
+      "statusBar": "Light or dark based on content"
+    },
+    "cardLayouts": {
+      "singleColumn": "Full-width cards with consistent spacing",
+      "grid": "2-column grid for compact content",
+      "horizontal": "Horizontally scrolling card collections",
+      "stacked": "Overlapping cards for depth"
+    },
+    "contentOrganization": {
+      "hierarchy": "Clear visual hierarchy through size and weight",
+      "grouping": "Related content grouped in cards",
+      "whitespace": "Generous use of whitespace for breathing room",
+      "alignment": "Left-aligned text, center-aligned buttons"
+    }
+  },
+  "interactionPatterns": {
+    "gestures": {
+      "tap": "Primary interaction method",
+      "swipe": "Horizontal navigation, card dismissal",
+      "scroll": "Vertical content browsing",
+      "pinch": "Zoom for images/maps"
+    },
+    "feedback": {
+      "haptic": "Light haptic feedback for interactions",
+      "visual": "Subtle animations and state changes",
+      "loading": "Animated loading states",
+      "success": "Confirmation animations"
+    },
+    "animations": {
+      "duration": "0.2-0.3s for micro-interactions",
+      "easing": "iOS standard easing curves",
+      "transitions": "Smooth page transitions",
+      "springs": "Spring animations for dynamic feel"
+    }
+  },
+  "accessibility": {
+    "contrast": "WCAG AA compliant color combinations",
+    "touchTargets": "Minimum 44px touch target size",
+    "typography": "Supports Dynamic Type scaling",
+    "navigation": "VoiceOver compatible structure",
+    "focus": "Clear focus indicators"
+  },
+  "responsive": {
+    "breakpoints": {
+      "iPhone SE": "375px width",
+      "iPhone Standard": "390px width",
+      "iPhone Plus": "428px width"
+    },
+    "adaptations": {
+      "typography": "Scales with device and user preferences",
+      "spacing": "Maintains proportional spacing",
+      "components": "Flexible component sizing",
+      "layout": "Adapts to screen real estate"
+    }
+  },
+  "implementation": {
+    "technologies": {
+      "framework": "SwiftUI or UIKit",
+      "animations": "Core Animation",
+      "gestures": "UIGestureRecognizer",
+      "navigation": "UINavigationController"
+    },
+    "assets": {
+      "images": "@2x and @3x resolution variants",
+      "icons": "SF Symbols when possible",
+      "colors": "iOS color assets with dark mode support"
+    }
+  }
+}
