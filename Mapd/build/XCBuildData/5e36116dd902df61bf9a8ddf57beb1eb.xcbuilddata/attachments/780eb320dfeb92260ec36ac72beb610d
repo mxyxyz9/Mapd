@@ -1,0 +1,130 @@
+{
+  "" : {
+    "const-values" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Mapd-master.swiftconstvalues",
+    "dependencies" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Mapd-master.d",
+    "diagnostics" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Mapd-master.dia",
+    "emit-module-dependencies" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Mapd-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Mapd-master-emit-module.dia",
+    "swift-dependencies" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Mapd-master.swiftdeps"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Components/MapdButton.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdButton.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdButton.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdButton.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Components/MapdCard.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdCard.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdCard.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdCard.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/ContentView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Design/DesignSystem.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/DesignSystem.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/DesignSystem.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/DesignSystem.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Managers/LocationManager.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/LocationManager.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/LocationManager.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/LocationManager.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Managers/UserManager.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/UserManager.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/UserManager.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/UserManager.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/MapdApp.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdApp.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdApp.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MapdApp.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Models/Place.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Place.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Place.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Place.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Models/Trip.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Trip.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Trip.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/Trip.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Models/User.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/User.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/User.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/User.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Dashboard/DashboardView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/DashboardView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/DashboardView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/DashboardView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Dashboard/RecommendationsSection.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/RecommendationsSection.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/RecommendationsSection.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/RecommendationsSection.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Dashboard/UpcomingTripsSection.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/UpcomingTripsSection.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/UpcomingTripsSection.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/UpcomingTripsSection.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/MainTabView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/MainTabView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Onboarding/InterestSelectionStep.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/InterestSelectionStep.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/InterestSelectionStep.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/InterestSelectionStep.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Onboarding/LocationPermissionStep.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/LocationPermissionStep.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/LocationPermissionStep.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/LocationPermissionStep.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Onboarding/OnboardingFlow.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/OnboardingFlow.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/OnboardingFlow.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/OnboardingFlow.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Onboarding/WelcomeView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/WelcomeView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/WelcomeView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/WelcomeView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Places/AddPlaceView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/AddPlaceView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/AddPlaceView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/AddPlaceView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Places/PlacesView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/PlacesView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/PlacesView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/PlacesView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Profile/ProfileView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/ProfileView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/ProfileView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/ProfileView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Search/SearchView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/SearchView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/SearchView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/SearchView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/Mapd/Views/Trips/TripsView.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/TripsView.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/TripsView.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/TripsView.o"
+  },
+  "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/rushil.dev/Desktop/untitled folder/Mapd/build/Mapd.build/Release-iphoneos/Mapd.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}
