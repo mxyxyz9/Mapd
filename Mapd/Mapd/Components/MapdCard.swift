@@ -157,8 +157,8 @@ struct PlaceCard: View {
                     if let rating = place.rating, place.isVisited {
                         HStack(spacing: MapdSpacing.xs) {
                             ForEach(1...5, id: \.self) { star in
-                                Image(systemName: star <= rating ? "star.fill" : "star")
-                                    .foregroundColor(star <= rating ? MapdColors.warning : MapdColors.lightGray)
+                                Image(systemName: Double(star) <= rating ? "star.fill" : "star")
+                                    .foregroundColor(Double(star) <= rating ? MapdColors.warning : MapdColors.lightGray)
                                     .font(.caption)
                             }
                         }

@@ -10,7 +10,7 @@ import CoreLocation
 import SwiftUI
 
 struct Place: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     var name: String
     var country: String
     var city: String
@@ -23,7 +23,8 @@ struct Place: Identifiable, Codable {
     var isVisited: Bool
     var isInBucketList: Bool
     
-    init(name: String, country: String, city: String, coordinate: CLLocationCoordinate2D, dateVisited: Date? = nil, rating: Double? = nil, notes: String? = nil, photos: [String] = [], tags: [String] = [], isVisited: Bool = false, isInBucketList: Bool = false) {
+    init(id: UUID = UUID(), name: String, country: String, city: String, coordinate: CLLocationCoordinate2D, dateVisited: Date? = nil, rating: Double? = nil, notes: String? = nil, photos: [String] = [], tags: [String] = [], isVisited: Bool = false, isInBucketList: Bool = false) {
+        self.id = id
         self.name = name
         self.country = country
         self.city = city

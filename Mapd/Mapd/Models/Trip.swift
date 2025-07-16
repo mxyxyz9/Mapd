@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Trip: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     var name: String
     var destination: Place
     var startDate: Date
@@ -19,7 +19,8 @@ struct Trip: Identifiable, Codable {
     var checklist: [ChecklistItem]
     var isCompleted: Bool
     
-    init(name: String, destination: Place, startDate: Date, endDate: Date, numberOfTravelers: Int = 1, tripType: TripType = .solo) {
+    init(id: UUID = UUID(), name: String, destination: Place, startDate: Date, endDate: Date, numberOfTravelers: Int = 1, tripType: TripType = .solo) {
+        self.id = id
         self.name = name
         self.destination = destination
         self.startDate = startDate
@@ -89,14 +90,15 @@ enum TripType: String, CaseIterable, Codable {
 }
 
 struct ChecklistItem: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     var title: String
     var category: ChecklistCategory
     var priority: Priority
     var isCompleted: Bool
     var reminderDate: Date?
     
-    init(title: String, category: ChecklistCategory, priority: Priority = .medium, isCompleted: Bool = false, reminderDate: Date? = nil) {
+    init(id: UUID = UUID(), title: String, category: ChecklistCategory, priority: Priority = .medium, isCompleted: Bool = false, reminderDate: Date? = nil) {
+        self.id = id
         self.title = title
         self.category = category
         self.priority = priority

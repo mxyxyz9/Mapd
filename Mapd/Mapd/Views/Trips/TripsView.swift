@@ -19,13 +19,13 @@ struct TripsView: View {
     @State private var selectedTrip: Trip?
     
     private var upcomingTrips: [Trip] {
-        userManager.user.trips.filter { trip in
+        userManager.currentUser.trips.filter { trip in
             trip.startDate > Date() || (trip.startDate <= Date() && trip.endDate >= Date())
         }
     }
     
     private var pastTrips: [Trip] {
-        userManager.user.trips.filter { $0.endDate < Date() }
+        userManager.currentUser.trips.filter { $0.endDate < Date() }
     }
     
     private var filteredUpcomingTrips: [Trip] {
@@ -120,8 +120,7 @@ struct TripsView: View {
         if !searchText.isEmpty {
             filtered = filtered.filter { trip in
                 trip.name.localizedCaseInsensitiveContains(searchText) ||
-                trip.destination.name.localizedCaseInsensitiveContains(searchText) ||
-                trip.travelers.contains { $0.localizedCaseInsensitiveContains(searchText) }
+                trip.destination.name.localizedCaseInsensitiveContains(searchText)
             }
         }
         
@@ -130,13 +129,13 @@ struct TripsView: View {
         case .all:
             break
         case .solo:
-            filtered = filtered.filter { $0.travelers.count <= 1 }
+            filtered = filtered.filter { $0.numberOfTravelers <= 1 }
         case .group:
-            filtered = filtered.filter { $0.travelers.count > 1 }
+            filtered = filtered.filter { $0.numberOfTravelers > 1 }
         case .business:
-            filtered = filtered.filter { $0.type == .business }
+            filtered = filtered.filter { $0.tripType == .business }
         case .leisure:
-            filtered = filtered.filter { $0.type == .leisure }
+            filtered = filtered.filter { $0.tripType == .leisure }
         case .adventure:
             filtered = filtered.filter { $0.tripType == .adventure }
         }
@@ -330,7 +329,7 @@ struct TripRowCard: View {
                             .foregroundColor(MapdColors.darkText)
                             .lineLimit(1)
                         
-                        Text(trip.destination)
+                        Text(trip.destination.name)
                             .font(MapdTypography.small)
                             .foregroundColor(MapdColors.mediumGray)
                             .lineLimit(1)
@@ -342,9 +341,9 @@ struct TripRowCard: View {
                         TripStatusBadge(trip: trip)
                         
                         HStack(spacing: MapdSpacing.xs) {
-                            Image(systemName: trip.type.icon)
+                            Image(systemName: trip.tripType.icon)
                                 .font(.caption)
-                                .foregroundColor(trip.type.color)
+                                .foregroundColor(trip.tripType.color)
                             
                                                         Text(trip.tripType.rawValue.capitalized)
                                 .font(MapdTypography.caption)
@@ -396,7 +395,7 @@ struct TripRowCard: View {
                             .font(.caption)
                             .foregroundColor(MapdColors.mediumGray)
                         
-                        Text("\(trip.travelers.count) traveler\(trip.travelers.count == 1 ? "" : "s")")
+                        Text("\(trip.numberOfTravelers) traveler\(trip.numberOfTravelers == 1 ? "" : "s")")
                             .font(MapdTypography.small)
                             .foregroundColor(MapdColors.mediumGray)
                     }
@@ -543,7 +542,7 @@ struct TripsEmptyState: View {
                 
                 if let actionTitle = config.actionTitle, let action = config.action {
                     MapdButton(
-                        title: actionTitle,
+                        actionTitle,
                         style: .primary,
                         size: .medium,
                         action: action
@@ -663,25 +662,15 @@ struct TripDetailView: View {
                     }
                     
                     // Travelers
-                    if !trip.travelers.isEmpty {
+                    if trip.numberOfTravelers > 0 {
                         VStack(alignment: .leading, spacing: MapdSpacing.sm) {
                             Text("Travelers")
                                 .font(MapdTypography.heading2)
                                 .foregroundColor(MapdColors.darkText)
                             
-                            ForEach(trip.travelers, id: \.self) { traveler in
-                                HStack {
-                                    Image(systemName: "person.circle")
-                                        .foregroundColor(MapdColors.accent)
-                                    
-                                    Text(traveler)
-                                        .font(MapdTypography.body)
-                                        .foregroundColor(MapdColors.darkText)
-                                    
-                                    Spacer()
-                                }
-                                .padding(.vertical, MapdSpacing.xs)
-                            }
+                            Text("\(trip.numberOfTravelers) traveler\(trip.numberOfTravelers == 1 ? "" : "s")")
+                                .font(MapdTypography.body)
+                                .foregroundColor(MapdColors.darkText)
                         }
                     }
                     

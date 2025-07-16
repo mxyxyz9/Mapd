@@ -365,11 +365,7 @@ struct PlaceRowCard: View {
                         
                         Spacer()
                         
-                        if place.isFavorite {
-                            Image(systemName: "heart.fill")
-                                .font(.caption)
-                                .foregroundColor(MapdColors.error)
-                        }
+                        
                     }
                     
                     Text("\(place.city), \(place.country)")
@@ -531,19 +527,19 @@ struct PlacesEmptyState: View {
 // MARK: - Place Filter Enum
 enum PlaceFilter: CaseIterable, Equatable, Hashable {
     case all
-    case favorites
+    
     case recent
     case highRated
     case tag(String)
     
     static var allCases: [PlaceFilter] {
-        [.all, .favorites, .recent, .highRated]
+        [.all, .recent, .highRated]
     }
     
     var title: String {
         switch self {
         case .all: return "All"
-        case .favorites: return "Favorites"
+        
         case .recent: return "Recent"
         case .highRated: return "High Rated"
         case .tag(let name): return name
@@ -553,7 +549,6 @@ enum PlaceFilter: CaseIterable, Equatable, Hashable {
     var icon: String {
         switch self {
         case .all: return "list.bullet"
-        case .favorites: return "heart.fill"
         case .recent: return "clock"
         case .highRated: return "star.fill"
         case .tag: return "tag.fill"
